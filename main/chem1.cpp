@@ -99,11 +99,7 @@ bool isInSemiCircle(Point *p_array, int len) {
     return false;
 }
 
-
-
-int main() {
-    auto start = high_resolution_clock::now();
-
+void test(){
     int s = 0;
     int p_num = 4;
 
@@ -121,6 +117,16 @@ int main() {
     float p = (float) s / NUM;
     std::cout << "probability: " << p << std::endl;
     free(p_array);
+}
+
+int main() {
+    auto start = high_resolution_clock::now();
+
+
+    test();
+
+    test();
+    test();
 
 
     auto stop = high_resolution_clock::now();
